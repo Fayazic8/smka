@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SMKA+</title>
+  <link rel="stylesheet" href="../script/styles.css">
+  <link rel="shortcut icon" href="../image/S.ico" type="image/x-icon">
+  <link rel="icon" href="../image/S.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    .cont {
+      margin: 0 auto;
+      padding: 20px;
+     }
+
+     @media (min-width: 750px) {
+       .cont {
+         margin: 0 200px;
+         font-size: 18px;
+       }
+
+       input[type="email"] {
+        height: 25px; /* Atur tinggi input email untuk desktop */
+        font-size: 18px; /* Atur ukuran teks input email untuk desktop */
+       }
+
+       textarea {
+         height: 200px; /* Atur tinggi textarea untuk desktop */
+         font-size: 18px; /* Atur ukuran teks textarea untuk desktop */
+       }
+     }
+
+     pre a {
+       text-decoration: none;
+       color: brown;
+     }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="navbar">
+      <a href="#" class="logo">
+        <img src="../image/S.png" alt="Logo SMK">
+      </a>
+      <ul class="menu-bar">
+        <li><a href="home.html">Beranda</a></li>
+        <li class="dropdown">
+          <a href="#">Jadwal</a>
+          <div class="dropdown-content">
+            <a href="../jadwal/j1.html">X TKJ 1</a>
+            <a href="../jadwal/j2.html">X TKJ 2</a>
+            <a href="../jadwal/j3.html">XI TKJ 1</a>
+            <a href="../jadwal/j4.html">XI TKJ 2</a>
+            <a href="../jadwal/j5.html">XII TKJ 1</a>
+            <a href="../jadwal/j6.html">XII TKJ 2</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="active">Support</a>
+          <div class="dropdown-content">
+            <a href="help.html">Bantuan</a>
+            <a href="contact.html" class="active">Kontak</a>
+          </div>
+        </li>
+        <li><a href="about.html">Tentang</a></li>
+      </ul>
+    </div>
+  </nav>
+  <h2 align="center">Kontak Kami</h2>
+  <form class="cont" method="post" action="send_email.php">
+    <label for="email">Email</label><br />
+    <input type="email" name="email" placeholder="alamat email" required /><br />
+    <br />
+    <label for="message">Pesan</label><br />
+    <textarea name="message" placeholder="Tulis pesan anda..." rows="4" cols="40" required></textarea>
+    <br />
+    <br />
+    <input type="submit" value="Kirim" />
+  </form>
+  
+  <div class="cont"> <b>Anda bisa menghubungi kontak dibawah:</b>
+    <pre>Email : <a href="mailto: fayazi.ulil06@gmail.com"><b>fayazi.ulil06@gmail.com</b></a></pre>
+    <pre>        <a href="mailto: louf7060@gmail.com"><b>louf7060@gmail.com</b></a></pre>
+    <br />
+    <p>Jangan lupa follow media sosial kami:</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/myfayazi.fayaz" target="_blank"><i class="fab fa-facebook" style="color: blue;"><b> MyFayazi Fayaz</b></i></a> <br>
+      <a href="#Fayazi Twit" target="_blank"><i class="fab fa-twitter" style="color:aqua;"><b> Fayazi Twit</b></i></a> <br>
+      <a href="https://www.instagram.com/kak.ziee/?next=%2F" target="_blank"><i class="fab fa-instagram" style="color: red;"><b> kak.ziee</b></i></a>
+        </div>
+  </div>
+  <br><br><br><br><br>
+  <div class="footer"> &copy; 2023 by
+    <a href="#" onclick="alert('Hai! ini aku Fayazi, yang telah membuat ini! Keren bukan? Keren Dong!')" style="text-decoration: none;">
+      <b style="color: brown;">
+        FayaziCode
+      </b>
+     </a>. All rights reserved.
+    </div>
+</body>
+</html>

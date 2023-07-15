@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SMKA+</title>
+  <link rel="stylesheet" href="../script/styles.css">
+  <link rel="shortcut icon" href="../image/S.ico" type="image/x-icon">
+  <link rel="icon" href="../image/S.ico" type="image/x-icon">
+  <style>
+    .header {
+      padding: 0px 65px;
+    }
+    pre {
+      font-size: 19px;
+    }
+    
+    @media (max-width: 568px) {
+      .header {
+        padding: 0px 0px;
+      }
+      h1 {
+        font-size: 22px;
+      }
+      pre {
+        font-size: 13px;
+      }
+    }
+    
+    h1 {
+      text-shadow: 0px 8px 16px 0px rgba(1,0,0,0.2);
+    }
+    
+    a {text-decoration: none;}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="navbar">
+      <a href="#" class="logo">
+        <img src="../image/S.png" alt="Logo SMK">
+      </a>
+      <ul class="menu-bar">
+        <li><a href="home.html" class="active">Beranda</a></li>
+        <li class="dropdown">
+          <a href="#">Jadwal</a>
+          <div class="dropdown-content">
+            <a href="../jadwal/j1.html">X TKJ 1</a>
+            <a href="../jadwal/j2.html">X TKJ 2</a>
+            <a href="../jadwal/j3.html">XI TKJ 1</a>
+            <a href="../jadwal/j4.html">XI TKJ 2</a>
+            <a href="../jadwal/j5.html">XII TKJ 1</a>
+            <a href="../jadwal/j6.html">XII TKJ 2</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">Support</a>
+          <div class="dropdown-content">
+            <a href="help.html">Bantuan</a>
+            <a href="contact.html">Kontak</a>
+          </div>
+        </li>
+        <li><a href="about.html">Tentang</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="header">
+    <h1 class="content" align="center">Selamat Datang Di Halaman SMK</h1>
+  <marquee behavior="left" direction="" style="background-color: red; color: white;">
+    <pre><b>Disini saya akan menjelaskan tentang informasi sekolah, mengenai sekolah dan mengenai sekolah.                                        Bagaimana menurut anda tentang web ini?                           Anda dapat berdonasi melalui: <a href="donation/donasi.html"><b>donasi-dev-fayazi.id</b></a></b></pre>
+  </marquee>
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  
+  
+  <div class="footer"> &copy; 2023 by
+    <a href="#" onclick="alert('Hai! ini aku Fayazi, yang telah membuat ini! Keren bukan? Keren Dong!')" style="text-decoration: none;">
+      <b style="color: brown;">
+        FayaziCode
+      </b>
+     </a>. All rights reserved.
+    </div>
+</body>
+<script>
+        var content = document.getElementsByClassName("content");
+        console.log(content);
+</script>
+<script>
+    var content = document.getElementsByClassName("content");
+    setInterval(function () {
+        content[0].style.color = "red";
+
+        setTimeout(function () {
+            content[0].style.color = "blue";
+        }, 500)
+    }, 1000);
+    </script>
+</html>

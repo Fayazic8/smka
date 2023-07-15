@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>dashcoffee.com</title>
+  <style>
+    /* Gaya CSS Anda di sini */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .bold {
+      color: brown;
+    }
+
+    .header {
+      background-color: #337ab7;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .donation-form {
+      margin-top: 20px;
+    }
+
+    .donation-form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .donation-form input[type="text"],
+    .donation-form input[type="email"],
+    .donation-form select {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .donation-form textarea {
+      width: 90%;
+      height: 100px;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .donation-form input[type="submit"] {
+      background-color: #337ab7;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .footer {
+      background-color: #f2f2f2;
+      color: #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .help-button {
+      text-align: center;
+      background-color: #337ab7;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+
+    .help-content {
+      display: none;
+      background-color: #f2f2f2;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-top: 10px;
+      align-content: center;
+    }
+
+    .help-content img {
+      width: 200px;
+      height: 200px;
+      border-radius: 0%;
+      margin-bottom: 10px;
+    }
+
+    .help-content a {text-decoration: none;}
+
+
+    /* Produk coffee*/
+    .produk {
+    	display: flex;
+    	margin-bottom: 20px;
+    }
+
+    .produk .gambar {
+     	flex-basis: 30%;
+     	margin-right: 20px;
+    }
+
+    .produk .gambar img {
+    	max-width: 100%;
+    	height: 110px;
+    	width: 110px;
+    }
+
+   .produk .keterangan {
+     	flex-basis: 70%;
+    }
+
+    .produk h3 {
+	    margin-top: 0;
+    }
+
+    .produk p {
+     	margin: 10px 0;
+    }
+
+    button {
+    	padding: 10px 20px;
+	    background-color: #337ab7;
+    	color: #fff;
+    	border: none;
+    	border-radius: 5px;
+    	cursor: pointer;
+    }
+
+    button:hover {
+     	background-color: #444;
+    }
+  </style>
+</head>
+<body>
+  <div class="header" align="center">
+    <h1><b style="color: brown;">
+    <img src="image/coffee-logo-design-18-transformed.png" alt="coffee-logo-design-18-transformed" class="img">
+    Dash Coffee</b></h1>
+  </div>
+
+  <div class="content">
+    <h2>Donasi untuk Dev <b style="color: brown;">FayaziCode</b></h2>
+
+    <marquee behavior="left" direction="1000ms" style="background-color: #b7b6b6; color: blue;" height="35px"><pre><b> Selamat datang di <b class="bold">dashcoffee.com</b>                                                    <b class="bold">dashcoffee.com</b> adalah kopi yang menciptakan energi bagi developer dan membuat developer menjadi semangat.                                                      Sebenarnya uang yang anda belikan, kami memberikannya setiap bulannya! sesuai dengan nominal yang di hasilkan oleh developer tersebut.</b></pre></marquee>
+
+    <br><br>
+
+    <div class="produk">
+				<div class="gambar">
+					<img src="image/coffee-logo-design-18-transformed.png" alt="coffee">
+				</div>
+				<div class="keterangan">
+					<h3>Secangkir Kopi</h3>
+					<p>Harga: Rp 1.500,00</p>
+					<a href="checkout/out1.html">
+						<button1 >Belikan</button>
+					</a>
+				</div>
+			</div> <br>
+
+		<div class="produk">
+				<div class="gambar">
+					<img src="image/coffee-logo-design-18-transformed.png" alt="coffee">
+				</div>
+				<div class="keterangan">
+					<h3>5 Cangkir Kopi</h3>
+					<p>Harga: Rp 7.500,00</p>
+					<a href="checkout/out2.html">
+						<button2 >Belikan</button>
+					</a>
+				</div>
+			</div> <br>
+
+		<div class="produk">
+				<div class="gambar">
+					<img src="image/coffee-logo-design-18-transformed.png" alt="coffee">
+				</div>
+				<div class="keterangan">
+					<h3>10 Cangkir Kopi</h3>
+					<p>Harga: Rp 15.000,00</p>
+					<a href="https://link.dana.id/minta/2skanv384qi?params=[source=request_money]">
+						<button5 >Belikan</button>
+					</a>
+				</div>
+			</div> <br>
+
+		<div class="produk">
+				<div class="gambar">
+					<img src="image/coffee-logo-design-18-transformed.png" alt="coffee">
+				</div>
+				<div class="keterangan">
+					<h3>30 Cangkir Kopi</h3>
+					<p>Harga: Rp 45.000,00</p>
+					<a href="https://link.dana.id/minta/2skao31cgs2?params=[source=request_money]">
+						<button15 >Belikan</button>
+					</a>
+				</div>
+			</div> <br>
+
+		<div class="produk">
+				<div class="gambar">
+					<img src="image/coffee-logo-design-18-transformed.png" alt="coffee">
+				</div>
+				<div class="keterangan">
+					<h3>50 Cangkir Kopi</h3>
+					<p>Harga: Rp 75.000,00</p>
+					<a href="https://link.dana.id/minta/2skao711g6a?params=[source=request_money]">
+						<button25 >Belikan</button>
+					</a>
+				</div>
+			</div> <br>
+
+		<div class="produk">
+				<div class="gambar">
+					<img src="image/coffee-logo-design-18-transformed.png" alt="coffee">
+				</div>
+				<div class="keterangan">
+					<h3>100 Cangkir Kopi</h3>
+					<p>Harga: Rp 150.000,00</p>
+					<a href="https://link.dana.id/minta/2skaod5sicq?params=[source=request_money]">
+						<button50 >Belikan</button>
+					</a>
+				</div>
+			</div>
+
+
+
+        <br> <br>
+        <h3>Anda bisa mendonasikan berapun nominalnya, hanya IDR (Rupiah).</h3>
+        <div class="button-container">
+          <button class="help-button">Gunakan Kode QRIS/Link</button>
+
+          <div class="help-content" align="center">
+            <h3 >Anda bisa langsung scan atau klik link dibawahnya!</h3>
+            <img src="image/Dana_QRIS.jpg" alt="https://link.dana.id/qr/3oc9q6i"/> <br>
+            Link : <a href="https://link.dana.id/qr/3oc9q6i">https://link.dana.id/qr/3oc9q6i</a>
+            </div>
+         </div>
+      <p><b>Terima kasih atas minat Anda untuk memberikan donasi. Donasi Anda akan sangat berarti dalam mendukung misi kami.</b></p>
+  </div>
+
+
+  <br><br><br>
+
+  <div class="footer">
+    Copyright &copy; 2023 <b style="color: brown;">dashcoffee.com</b>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+       var helpButton = document.querySelector(".help-button");
+       var helpContent = document.querySelector(".help-content");
+
+       helpButton.addEventListener("click", function() {
+       helpContent.style.display = (helpContent.style.display === "none") ? "block" : "none";
+       });
+     });
+  </script>
+</body>
+</html>

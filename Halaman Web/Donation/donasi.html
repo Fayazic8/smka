@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>donasi-dev-fayazi.id</title>
+  <style>
+    /* Gaya CSS Anda di sini */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #337ab7;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .donation-form {
+      margin-top: 20px;
+    }
+
+    .donation-form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .donation-form input[type="text"],
+    .donation-form input[type="email"],
+    .donation-form select {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .donation-form textarea {
+      width: 90%;
+      height: 100px;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .donation-form input[type="submit"] {
+      background-color: #337ab7;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .footer {
+      background-color: #f2f2f2;
+      color: #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .help-button {
+      text-align: center;
+      background-color: #337ab7;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+
+    .help-content {
+      display: none;
+      background-color: #f2f2f2;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-top: 10px;
+      align-content: center;
+    }
+
+    .help-content img {
+      width: 200px;
+      height: 200px;
+      border-radius: 0%;
+      margin-bottom: 10px;
+    }
+
+    /* css iklan */
+    .ad-container {
+      width: 300px;
+      height: 250px;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .ad-container img {
+      max-width: 100%;
+      max-height: 100%;
+      text-align: center;
+    }
+
+    .ad-container:hover .ad-image {
+      opacity: 1;
+    }
+
+    .bb {
+      text-align: center;
+      background-color: #201e1e;
+      cursor: pointer;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+    }
+
+    .NText {
+      text-decoration: none;
+      color: white;
+    }
+
+    .ad-container:hover .ad-text {
+      opacity: 1;
+    }
+
+    .help-content a {text-decoration: none;}
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Donasi <b style="color: brown;">FayaziCode</b></h1>
+  </div>
+
+  <div class="content">
+    <h2>Donasi untuk Kebaikan</h2>
+
+    <p>Terima kasih atas minat Anda untuk memberikan donasi. Donasi Anda akan sangat berarti dalam mendukung misi kami.</p>
+
+    <div class="ad-container">
+      <a href="#">
+         <img id="ad-image" src="image/1.jpeg" alt="Iklan Shopee pink" style="align-items: center;">
+      </a>
+    </div>
+    <div class="bb"><a href="#" class="NText" onclick="alert('Meskipun iklan ini cukup mengganggu bagi anda, tetapi iklan ini memberikan kami penghasilan, meskipun penghasilannya tidak seberapa.')">Mengapa ada iklan di halaman ini?</a></div>
+
+    <div class="donation-form">
+      <h3>Formulir Donasi</h3>
+      <form id="donation-form" onsubmit="submitDonation(event)">
+        <label for="name">Nama Lengkap</label>
+        <input type="text" id="name" placeholder="Masukkan nama lengkap Anda" required>
+
+        <label for="email">Alamat Email</label>
+        <input type="email" id="email" placeholder="Masukkan alamat email Anda" required>
+
+        <label for="donation-amount">Jumlah Donasi</label>
+        <input type="number" id="donation-amount" placeholder="Masukkan jumlah donasi dalam IDR" required>
+
+        <label for="message">Pesan (opsional)</label>
+        <textarea id="message" placeholder="Tulis pesan Anda (opsional)"></textarea>
+
+        <input type="submit" value="Donasi Sekarang">
+        <br> <br>
+        <div class="button-container">
+          <button class="help-button">Gunakan Kode QRIS/Link</button>
+
+          <div class="help-content" align="center">
+            <h3 >Anda bisa langsung scan atau klik link dibawahnya!</h3>
+            <img src="image/Dana_QRIS.jpg" alt="https://link.dana.id/qr/3oc9q6i"/> <br>
+            <div>Melalui : <a href="https://link.dana.id/qr/3oc9q6i">https://link.dana.id/qr/3oc9q6i</a></div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <br><br><br>
+
+  <div class="footer">
+    &copy; 2023 <b style="color: brown;">FayaziCode</b>. All rights reserved.
+  </div>
+
+  <script>
+    function submitDonation(event) {
+      event.preventDefault(); // Mencegah pengiriman formulir secara default
+
+      // Mengambil nilai-nilai dari input
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var donationAmount = document.getElementById("donation-amount").value;
+      var message = document.getElementById("message").value;
+
+      // Lakukan validasi jika diperlukan
+      if (name === "" || email === "" || donationAmount === "") {
+        ("Mohon lengkapi semua kolom yang diperlukan.");
+        return;
+      }
+
+      // Lakukan proses pengiriman donasi atau tindakan lain sesuai kebutuhan Anda
+      // Di sini, Anda dapat menggunakan JavaScript untuk mengirim data donasi ke server atau melakukan tindakan lainnya
+
+      // Contoh: Menampilkan pesan sukses dan mereset formulir
+      ("Terima kasih atas donasi Anda!");
+      document.getElementById("donation-form").reset();
+    }
+    
+    document.addEventListener("DOMContentLoaded", function(event) {
+var helpButton = document.querySelector(".help-button");
+var helpContent = document.querySelector(".help-content");
+
+helpButton.addEventListener("click", function() {
+helpContent.style.display = (helpContent.style.display === "none") ? "block" : "none";
+});
+});
+  </script>
+  <script>
+    // Daftar gambar iklan
+    var adImages = [
+      "image/2.jpg",
+      "image/3.jpg",
+      "image/4.jpg",
+      "image/5.jpg",
+      "image/6.jpg"
+    ];
+
+    // Element gambar iklan
+    var adImage = document.getElementById("ad-image");
+
+    // Fungsi untuk mengganti gambar iklan secara acak
+    function changeAdImage() {
+      var randomIndex = Math.floor(Math.random() * adImages.length);
+      var randomImage = adImages[randomIndex];
+      adImage.src = randomImage;
+    }
+
+    // Mengganti gambar iklan setiap 3 detik
+    setInterval(changeAdImage, 3000);
+  </script>
+</body>
+</html>

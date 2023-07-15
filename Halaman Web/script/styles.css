@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.logo img {
+  width: 50px; /* Menentukan lebar gambar */
+  height: 50px; /* Menentukan tinggi gambar */
+  border-radius: 0%; /* Mengatur melingkar */
+}
+
+a.active {
+  font-weight: bold;
+  color: white;
+  background-color: #111;
+}
+
+/* Gaya CSS untuk menu bar */
+ul.menu-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.menu-bar li {
+  float: left;
+}
+
+ul.menu-bar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.menu-bar li a:hover {}
+
+/* Gaya CSS untuk dropdown menu */
+ul.menu-bar li.dropdown {
+  display: inline-block;
+}
+
+ul.menu-bar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+ul.menu-bar .dropdown-content a {
+  color: grey;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+ul.menu-bar .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* khusus table pada jadwal */
+table {
+  border-collapse: collapse;
+  position: relative;
+  margin: auto;
+  color:;
+}
+
+#clock {
+  font-size: 15px;
+  text-align: center;
+}
+
+#date {
+  font-size: 15px;
+  text-align: center;
+}
+
+/* khusus bantuan */
+.help-button {
+  text-align: center;
+  background-color: #337ab7;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-container {
+  text-align: center;
+  
+}
+
+.help-content {
+  display: none;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+  align-content: center;
+}
+
+/* Content agak miringan*/
+.content {
+max-width: 800px;
+margin: 0 auto;
+padding: 20px;
+}
+
+.content h1 {
+font-size: 24px;
+margin-top: 0;
+}
+
+.content p {
+line-height: 1.5;
+}
+
+.service {
+margin-bottom: 20px;
+}
+
+.service h3 {
+margin-top: 0;
+}
+
+.service p {
+margin-bottom: 0;
+}
+
+/* Bagian Copyright*/
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #333333;
+  text-align: center;
+  line-height: 50px;
+  color: #ffffffe5;
+}
+
+@media (max-width: 570px)
+.footer {
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 10px;
+  text-align: center;
+}

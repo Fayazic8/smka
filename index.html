@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Memuat ke SMKA+</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f2f2f2;
+    }
+
+    @media (min-width: 569px) {
+      .loading {
+        text-align: center;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+        font-size: 36px;
+      }
+
+      .loading h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+        animation: blink-animation 1s infinite;
+      }
+
+      .loading p {
+        font-size: 24px;
+        color: #888;
+      }
+
+      .hidden {
+        opacity: 0;
+      }
+    }
+
+    @media (max-width: 568px) {
+      .loading {
+        text-align: center;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+      }
+
+      .loading h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        animation: blink-animation 1s infinite;
+      }
+
+      .loading p {
+        color: #888;
+      }
+
+      .hidden {
+        opacity: 0;
+      }
+    }
+
+    @keyframes blink-animation {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="loading">
+    <h1>Loading<span id="loading-dots"></span></h1>
+    <p>Please wait while the page is loading.</p>
+  </div>
+
+  <script>
+    // Menghilangkan halaman pemuatan setelah beberapa detik dan mengalihkan ke halaman lain
+    setTimeout(function() {
+      var loading = document.querySelector('.loading');
+      loading.classList.add('hidden');
+
+      setTimeout(function() {
+        window.location.href = 'Halaman Web/123/home.html';
+      }, 500); // Durasi animasi 0.5 detik (500 milidetik)
+    }, 6250); // Waktu tunda 6.5 detik (65000 milidetik)
+
+    // Animasi loading dots
+    var loadingDots = document.getElementById('loading-dots');
+    var dots = '';
+
+    var loaded = setInterval(function() {
+      dots += '.';
+      loadingDots.textContent = dots;
+
+    // Mengulang dari titik 3 menjadi 0
+    if (dots.length === 3) {
+      dots = '';
+    }
+  }, 500); // 1000ms = 1 detik
+
+  </script>
+</body>
+</html>

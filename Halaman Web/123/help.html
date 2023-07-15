@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SMKA+</title>
+  <link rel="stylesheet" href="../script/styles.css">
+  <link rel="shortcut icon" href="../image/S.ico" type="image/x-icon">
+  <link rel="icon" href="../image/S.ico" type="image/x-icon">
+</head>
+<body>
+  <nav>
+    <div class="navbar">
+      <a href="#" class="logo">
+        <img src="../image/S.png" alt="Logo SMK">
+      </a>
+      <ul class="menu-bar">
+        <li><a href="home.html">Beranda</a></li>
+        <li class="dropdown">
+          <a href="#">Jadwal</a>
+          <div class="dropdown-content">
+            <a href="../jadwal/j1.html">X TKJ 1</a>
+            <a href="../jadwal/j2.html">X TKJ 2</a>
+            <a href="../jadwal/j3.html">XI TKJ 1</a>
+            <a href="../jadwal/j4.html">XI TKJ 2</a>
+            <a href="../jadwal/j5.html">XII TKJ 1</a>
+            <a href="../jadwal/j6.html">XII TKJ 2</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="active">Support</a>
+          <div class="dropdown-content">
+            <a href="help.html" class="active">Bantuan</a>
+            <a href="contact.html">Kontak</a>
+          </div>
+        </li>
+        <li><a href="about.html">Tentang</a></li>
+      </ul>
+    </div>
+  </nav>
+  <h1 align="center"> Halaman Bantuan</h1>
+
+  <h2 align="center">Selamat Datang di halaman bantuan! Jika ada masalah, Silahkan klik bantuan dibawah!</h2>
+
+  <div class="button-container">
+    <button class="help-button">Bantuan</button>
+  </div>
+
+  <div class="help-content">
+    <h3 align="center">Pertanyaan Umum</h3>
+    <ul>
+      <li class="content" style="text-align: left;">
+        <strong>Apakah web ini aman digunakan?</strong>
+        <p>100% kami jamin aman! Misalkan ada kesalahan, maka secara otomatis web ini akan tertutup.</p>
+      </li>
+      <li class="content" style="text-align: left;">
+        <strong>Apa manfaat web ini?</strong>
+        <p>Manfaat web ini sebagai informasi tentang sekolah smk bagi guru atau pun siswa.</p>
+      </li>
+      <li class="content" style="text-align: left;">
+        <strong>Bagaimana cara melihat jadwal kelas?</strong>
+        <p>Silahkan klik jadwal diatas dan pilih kelasnya.</p>
+      </li>
+      <li class="content" style="text-align: left;">
+        <strong>Ada yang salah tentang jadwal SMK/pelajarannya telah di ubah?</strong>
+        <p>Mohon hubungi : 
+        <a href="mailto: louf7060@gmail.com">louf7060@gmail.com</a>
+        dan juga berikan yang salah dimana atau anda bisa langsung mengirim menggunakan foto.
+        </p>
+      </li>
+    </ul> <br />
+
+    <h3 align="center">Kontak Kami</h3>
+    <p align="center">Jika Anda memiliki pertanyaan atau masalah khusus, silakan hubungi kami melalui email atau telepon yang tercantum di halaman Kontak (Support 》 Kontak).</p>
+  </div>
+  <br><br><br><br><br>
+  <div class="footer"> &copy; 2023 by
+    <a href="#" onclick="alert('Hai! ini aku Fayazi, yang telah membuat ini! Keren bukan? Keren Dong!')" style="text-decoration: none;">
+      <b style="color: brown;">
+        FayaziCode
+      </b>
+     </a>. All rights reserved.
+    </div>
+  <script>
+document.addEventListener("DOMContentLoaded", function(event) {
+var helpButton = document.querySelector(".help-button");
+var helpContent = document.querySelector(".help-content");
+
+helpButton.addEventListener("click", function() {
+helpContent.style.display = (helpContent.style.display === "none") ? "block" : "none";
+});
+});
+  </script>
+</body>
+</html>

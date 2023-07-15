@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pemberian Saran</title>
+  <style>
+    /* Gaya CSS Anda di sini */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #337ab7;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .footer {
+      background-color: #f2f2f2;
+      color: #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .help-button {
+      text-align: center;
+      background-color: #337ab7;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+
+    .help-content {
+      display: none;
+      background-color: #f2f2f2;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-top: 10px;
+      align-content: center;
+    }
+
+    .help-content img {
+      width: 200px;
+      height: 200px;
+      border-radius: 0%;
+      margin-bottom: 10px;
+    }
+
+    .bb {
+      text-align: center;
+      background-color: #201e1e;
+      cursor: pointer;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+    }
+
+    .NText {
+      text-decoration: none;
+      color: white;
+    }
+
+    .ad-container:hover .ad-text {
+      opacity: 1;
+    }
+
+    .help-content a {text-decoration: none;}
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Saran kepada <b style="color: brown;">FayaziCode</b></h1>
+  </div>
+
+  <div class="content">
+    <h2>Saran untuk pengembagan web</h2>
+
+    <p>Terima kasih atas minat Anda untuk memberikan saran. Saran Anda akan sangat berarti dalam mendukung web ini.</p>
+
+  <div class="button-container">
+    <button class="help-button">Pemberian Saran</button>
+  </div>
+
+    <div class="help-content">
+      <h3 align="center">Saran Pembaruan</h3>
+      <ul>
+        <li class="content" style="text-align: left;">
+          <strong>Berikan tampilan khusus untuk Mobile/Handphone, Tablet dan PC.</strong>
+          <p>Makasih atas infonya mungkin kami akan memperbarui web ini, pada pembaruan berikutnya.</p>
+        </li>
+        <li class="content" style="text-align: left;">
+          <strong>Berikan tampilan khusus pada hp, ada menu Humbugernya!</strong>
+          <p>Makasih atas sarannya, mungkin anda mengatakan menu humbuger (menu-toggle), Next time kami akan membaruinya.</p>
+        </li>
+        <li class="content" style="text-align: left;">
+          <strong>Apakah jadwal bisa agak di besarin? untuk PC atau tampilan desktop!</strong>
+          <p>Makasih atas infonya, oke kak kami akan memperbaruinya, pada pembaruan berikutnya.</p>
+        </li>
+      </ul>
+   </div>
+   <p>Jika Anda memiliki saran jangan ragu untuk menghungi kami : <a href="mailto: louf7060@gmail.com">louf7060@gmail.com</a></p>
+  </div>
+
+  <br><br><br>
+
+  <div class="footer">
+    &copy; 2023 <b style="color: brown;">FayaziCode</b>. All rights reserved.
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var helpButton = document.querySelector(".help-button");
+      var helpContent = document.querySelector(".help-content");
+
+      helpButton.addEventListener("click", function() {
+      helpContent.style.display = (helpContent.style.display === "none") ? "block" : "none";
+      });
+    });
+  </script>
+</body>
+</html>
